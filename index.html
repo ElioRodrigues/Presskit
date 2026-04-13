@@ -9,103 +9,92 @@
 <body>
   <div class="background-overlay"></div>
 
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">Meu Jogo</div>
+  <div class="page-container">
+    <aside class="sidebar">
+      <div class="sidebar-content">
 
-      <nav class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#features">Features</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
+        
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#description">Descrição</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#images">Imagens</a></li>
+            <li><a href="#logo">Logo & Icon</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
 
-  <main class="page-wrapper">
-    <section class="content-panel">
-      <section class="hero">
-        <span class="tag">Press Kit</span>
-        <h1>Nome do Jogo</h1>
-        <p class="hero-text">
-          Este é um texto genérico de apresentação do jogo. Aqui você pode inserir
-          uma descrição curta, clara e impactante sobre a proposta principal do
-          projeto, explicando rapidamente o que torna a experiência especial.
+        <section id="factsheet" class="factsheet">
+          <h2>Factsheet</h2>
+          <dl>
+            <dt>Desenvolvedores:</dt>
+            <dd>João Teixeira e Elio Rodrigues</dd>
+            <dt>Data de Lançamento:</dt>
+            <dd>Em breve</dd>
+            <dt>Plataformas:</dt>
+            <dd>PC / Web</dd>
+            <dt>Website:</dt>
+            <dd><a href="#">seujogo.github.io</a></dd>
+            <dt>Preço:</dt>
+            <dd>A definir</dd>
+          </dl>
+        </section>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="description" class="content-section">
+        <h1>projetoBTA</h1>
+        <p>
+          projetoBTA é um jogo de Tower Defense estratégico onde você comanda torres de macacos
+          para se defender de ondas incessantes de balões. Inspirado em clássicos do gênero,
+          o jogo traz mecânicas únicas e um visual carismático.
         </p>
       </section>
 
-      <section id="sobre" class="content-section">
-        <h2>Sobre o Jogo</h2>
+      <hr />
+
+      <section id="history" class="content-section">
+        <h2>História</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          O projeto começou durante uma GameJam (CESMAC) e desde então vem sendo expandido
+          com novas torres, inimigos e sistemas de progressão. O foco sempre foi criar
+          uma experiência viciante e desafiadora.
         </p>
       </section>
 
-      <section id="features" class="content-section">
-        <h2>Principais Features</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Feature 01</h3>
-            <p>
-              Texto genérico para explicar uma mecânica, diferencial ou ponto forte
-              do seu jogo.
-            </p>
-          </article>
+      <hr />
 
-          <article class="card">
-            <h3>Feature 02</h3>
-            <p>
-              Espaço para apresentar outra característica importante de forma
-              resumida e fácil de ler.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Feature 03</h3>
-            <p>
-              Você pode usar esta área para listar conteúdo, sistema de progressão,
-              modos ou elementos estratégicos.
-            </p>
-          </article>
+      <section id="images" class="content-section">
+        <h2>Imagens</h2>
+        <div class="gallery">
+          <a href="images/screenshot1.png" target="_blank">
+            <img src="images/screenshot1.png" alt="Screenshot 1" />
+          </a>
         </div>
       </section>
 
-      <section id="galeria" class="content-section">
-        <h2>Galeria</h2>
-        <p>
-          Aqui você poderá inserir imagens, screenshots, logos ou artes do projeto.
-          Por enquanto, o bloco está com conteúdo de exemplo.
-        </p>
+      <hr />
 
-        <div class="gallery-placeholder">
-          <div class="placeholder-box">Imagem 1</div>
-          <div class="placeholder-box">Imagem 2</div>
-          <div class="placeholder-box">Imagem 3</div>
+      <section id="logo" class="content-section">
+        <h2>Logo & Icon</h2>
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Logo" class="main-logo" />
         </div>
       </section>
 
-      <section id="contato" class="content-section">
+      <hr />
+
+      <section id="contact" class="content-section">
         <h2>Contato</h2>
         <p>
-          Você pode usar este espaço para colocar nome da equipe, e-mail, redes
-          sociais, links de imprensa ou qualquer outro dado relevante.
-        </p>
-        <p>
-          E-mail: contato@exemplo.com<br />
-          Instagram: @exemplo<br />
-          Site: www.exemplo.com
+          <strong>Inquiries:</strong> txneto2005@protonmail.com<br />
+          <strong>Twitter:</strong> @projetoBTA<br />
+          <strong>Web:</strong> seujogo.github.io
         </p>
       </section>
-    </section>
-  </main>
+    </main>
+  </div>
 
   <script src="script/script.js"></script>
 </body>
