@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Press Kit - Meu Jogo</title>
+  <title>Press Kit - Bloons Tower Attack (BTA)</title>
   <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
@@ -12,14 +12,11 @@
   <div class="page-container">
     <aside class="sidebar">
       <div class="sidebar-content">
-
-        
         <nav class="sidebar-nav">
           <ul>
             <li><a href="#description">Descrição</a></li>
             <li><a href="#history">História</a></li>
             <li><a href="#images">Imagens</a></li>
-            <li><a href="#logo">Logo & Icon</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
@@ -41,6 +38,10 @@
     </aside>
 
     <main class="main-content">
+      <div class="logo-container top-logo">
+        <img src="images/logo.png" alt="Logo" class="main-logo" />
+      </div>
+
       <section id="description" class="content-section">
         <h1>Bloons Tower Attack (BTA)</h1>
         <p>
@@ -68,21 +69,24 @@
 
       <hr />
 
+      <section id="gameplay" class="content-section">
+        <h2>Gameplay</h2>
+        <div class="video-container">
+          <video controls poster="images/screenshot1.png">
+            <source src="video/gameplay.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+      </section>
+
+      <hr />
+
       <section id="images" class="content-section">
         <h2>Imagens</h2>
         <div class="gallery">
           <a href="images/screenshot1.png" target="_blank">
             <img src="images/screenshot1.png" alt="Screenshot 1" />
           </a>
-        </div>
-      </section>
-
-      <hr />
-
-      <section id="logo" class="content-section">
-        <h2>Logo & Icon</h2>
-        <div class="logo-container">
-          <img src="images/logo.png" alt="Logo" class="main-logo" />
         </div>
       </section>
 

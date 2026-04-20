@@ -11,14 +11,13 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  background-color: #fcfcfc;
   line-height: 1.6;
 }
 
 .background-overlay {
   position: fixed;
   inset: 0;
-  background: #fff;
+  background: radial-gradient(circle at center, #ffffff 0%, #e8eff5 100%);
   z-index: -1;
 }
 
@@ -32,18 +31,14 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 280px; /* Largura definida para a sidebar */
+  width: 280px;
   height: 100vh;
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.8);
+  backdrop-filter: blur(5px);
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   z-index: 100;
-  overflow-y: auto; /* Adiciona scroll se o conteúdo for muito longo */
-}
-
-.sidebar-content {
-  position: static; /* Remove sticky do sidebar-content */
-  top: auto;
+  overflow-y: auto;
 }
 
 .sidebar-nav ul {
@@ -92,10 +87,20 @@ body {
 /* Main Content */
 .main-content {
   flex: 1;
-  margin-left: 280px; /* Offset para o conteúdo principal */
-  max-width: calc(100% - 280px); /* Garante que o conteúdo principal não exceda */
+  margin-left: 280px;
+  max-width: calc(100% - 280px);
   padding: 60px 40px;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.logo-container.top-logo {
+  padding: 0 0 40px 0;
+  text-align: left;
+}
+
+.logo-container.top-logo .main-logo {
+  max-width: 450px;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
 }
 
 .content-section {
@@ -116,7 +121,7 @@ body {
 
 hr {
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0,0,0,0.1);
   margin: 40px 0;
 }
 
@@ -137,15 +142,19 @@ hr {
   transform: scale(1.02);
 }
 
-.logo-container {
-  background: #f4f4f4;
-  padding: 40px;
-  text-align: center;
+/* Video */
+.video-container {
+  width: 100%;
+  max-width: 800px;
   border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: #000;
 }
 
-.main-logo {
-  max-width: 300px;
+.video-container video {
+  width: 100%;
+  display: block;
 }
 
 /* Mobile */
@@ -155,17 +164,15 @@ hr {
   }
 
   .sidebar {
-    position: static; /* Remove fixed position on mobile */
+    position: static;
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #eee;
     padding: 20px;
-    box-shadow: none; /* Remove shadow on mobile */
+    box-shadow: none;
   }
 
   .main-content {
-    margin-left: 0; /* Remove offset on mobile */
-    max-width: 100%; /* Permite largura total no mobile */
+    margin-left: 0;
+    max-width: 100%;
     padding: 30px 20px;
   }
 }
